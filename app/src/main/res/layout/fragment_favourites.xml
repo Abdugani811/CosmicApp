@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Fragment.FavouritesFragment">
+
+    <LinearLayout
+        android:id="@+id/linerLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@drawable/navbar_background"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/settingsImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="62dp"
+            android:background="@drawable/action_background"
+            android:padding="10dp"
+            android:src="@drawable/outline_display_settings_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/milkyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/figtree_regular"
+                android:text="Milky Way"
+                android:textColor="#8D8E99"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/favouritesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/figtree_extrabold"
+                android:text="Favourites"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="62dp"
+            android:background="@drawable/action_background"
+            android:padding="10dp"
+            android:src="@drawable/outline_contacts_product_24" />
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="327dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/navbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linerLayout1">
+
+        <ImageView
+            android:id="@+id/mercuryImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/planet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mercuryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/figtree_extrabold"
+            android:text="Mercury"
+            android:textColor="#11DCE8"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/mercuryImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mercuryInfoTv"
+            android:layout_width="192dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Mercury is the smallest planet in the Solar System and the closest to the Sun."
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/mercuryImageView"
+            app:layout_constraintTop_toBottomOf="@+id/mercuryTv" />
+
+        <TextView
+            android:id="@+id/mercuryDetailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="217dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/figtree_bold"
+            android:text="Details"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mercuryInfoTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="327dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/navbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1">
+
+        <ImageView
+            android:id="@+id/VenusImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/planet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/venusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/figtree_extrabold"
+            android:text="Venus"
+            android:textColor="#11DCE8"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/VenusImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/venusInfoTv"
+            android:layout_width="192dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Venus is the second planet from the Sun and is Earth's closest planetary neighbor"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/VenusImageView"
+            app:layout_constraintTop_toBottomOf="@+id/venusTv" />
+
+        <TextView
+            android:id="@+id/venusDetailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="217dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/figtree_bold"
+            android:text="Details"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/venusInfoTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="327dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/navbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageView
+            android:id="@+id/earthImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/planet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/earthTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/figtree_extrabold"
+            android:text="Earth"
+            android:textColor="#11DCE8"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/earthImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/earthInfoTv"
+            android:layout_width="192dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System."
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/earthImageView"
+            app:layout_constraintTop_toBottomOf="@+id/earthTv" />
+
+        <TextView
+            android:id="@+id/earthDetailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="217dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/figtree_bold"
+            android:text="Details"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/earthInfoTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="327dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/navbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <ImageView
+            android:id="@+id/marsImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/planet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/marsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/figtree_extrabold"
+            android:text="Mars"
+            android:textColor="#11DCE8"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/marsImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/marsInfoTv"
+            android:layout_width="192dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System."
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/marsImageView"
+            app:layout_constraintTop_toBottomOf="@+id/marsTv" />
+
+        <TextView
+            android:id="@+id/marsDetailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="217dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/figtree_bold"
+            android:text="Details"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marsInfoTv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

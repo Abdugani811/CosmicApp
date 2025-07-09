@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.cosmicapp.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_innerPageEarthFragment"
+            app:destination="@id/innerPageEarthFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_innerPageVenusFragment"
+            app:destination="@id/innerPageVenusFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_innerPageMercuryFragment"
+            app:destination="@id/innerPageMercuryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/innerPageEarthFragment"
+        android:name="com.example.cosmicapp.Fragment.InnerPageEarthFragment"
+        android:label="fragment_inner_page"
+        tools:layout="@layout/fragment_inner_page_earth" />
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.cosmicapp.Fragment.FavouritesFragment"
+        android:label="fragment_favourites"
+        tools:layout="@layout/fragment_favourites" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.cosmicapp.Fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.cosmicapp.Fragment.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/innerPageVenusFragment"
+        android:name="com.example.cosmicapp.Fragment.InnerPageVenusFragment"
+        tools:layout="@layout/fragment_inner_page_venus"
+        android:label="InnerPageVenusFragment" />
+    <fragment
+        android:id="@+id/innerPageMercuryFragment"
+        tools:layout="@layout/fragment_inner_page_mercury"
+        android:name="com.example.cosmicapp.Fragment.InnerPageMercuryFragment"
+        android:label="InnerPageMercuryFragment" />
+</navigation>
